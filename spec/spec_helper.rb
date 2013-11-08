@@ -42,4 +42,8 @@ RSpec.configure do |config|
 
   #Adicionado no Capitulo 3
   config.include Capybara::DSL
+
+  #Adicionado no Capitulo 5, para que os testes conseguissem usar os paths
+  config.include Rails.application.routes.url_helpers  
+
 end
