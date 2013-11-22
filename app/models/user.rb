@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
 	# Salvar email em minusculo para não haver problemas de compatibilidade
-	before_save { self.email = email.downcase }
+	before_save { email.downcase! }
 	
 	# Nome
 	validates :name, presence: true, length: { maximum: 50 }  	#Hash no final dos argumentos ñ precisa dos {}. Hash de options, muito comum.
