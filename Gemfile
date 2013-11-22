@@ -2,8 +2,11 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 #ruby-gemset=railstutorial_rails_4_0
 
-gem 'rails', '4.0.0'
-gem 'bootstrap-sass', '2.3.2.0'
+gem 'rails', '4.0.1'
+# Para usar o twitter bootstrap
+gem 'bootstrap-sass', '2.3.2.0' 
+# Para usar o has_secure_password. A versão 3.1.2 não funcionou. 
+gem 'bcrypt-ruby', '3.1.2'
 
 group :development, :test do
   gem 'sqlite3', '1.3.8'
